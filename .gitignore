@@ -1,0 +1,10 @@
+# Local workspace metadata and source planning input.
+/.agents/
+/.aws/
+/.codex/
+/.keel/
+/Regras_provedores_gateway_unificado.docx
+
+# Local test/build output.
+*.test
+coverage.out

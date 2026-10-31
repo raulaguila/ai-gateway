@@ -1,0 +1,154 @@
+[
+  {
+    "modelId": 598,
+    "modelGuid": "019e6e9b-0409-71e7-a268-fcfa40ed0ae0",
+    "modelServingId": "google-gemma-4-31b-it",
+    "name": [
+      { "languageCode": "en", "content": "Gemma 4" },
+      { "languageCode": "ko", "content": "Gemma 4" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "A multimodal AI model that can process both text and image inputs and supports over 140 languages\n-Provider: Google DeepMind\n-Model Size: 31B\n-Context Length: 60k\n-Structure: Dense\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "멀티모달 AI모델로 텍스트와 이미지 입력을 모두 처리할 수 있고 140개 이상의 언어를 지원\n-Provider: Google Deepmind\n-Model Size: 31B\n-Context Length: 60k\n-Structure: Dense\n-Tool calling: O"
+      }
+    ]
+  },
+  {
+    "modelId": 617,
+    "modelGuid": "019f2808-bbb2-73a9-a498-5ecb094f4cbc",
+    "modelServingId": "google-gemma-4-31b-it",
+    "name": [
+      { "languageCode": "en", "content": "Gemma4" },
+      { "languageCode": "ko", "content": "Gemma4" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "A multimodal AI model that can process both text and image inputs and supports over 140 languages\n-Provider: Google DeepMind\n-Model Size: 31B\n-Context Length: 60k\n-Structure: Dense\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "멀티모달 AI모델로 텍스트와 이미지 입력을 모두 처리할 수 있고 140개 이상의 언어를 지원\n-Provider: Google Deepmind\n-Model Size: 31B\n-Context Length: 60k\n-Structure: Dense\n-Tool calling: O"
+      }
+    ]
+  },
+  {
+    "modelId": 599,
+    "modelGuid": "019e6e9b-ecc9-77fa-aac6-3178af5d6d75",
+    "modelServingId": "gausso3-5-awq",
+    "name": [
+      { "languageCode": "en", "content": "GaussO Think (Beta)" },
+      { "languageCode": "ko", "content": "GaussO Think (Beta)" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Solves complex and challenging problems\n-Model Size: 744B (active: 40B)\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "복잡하고 난이도 높은 문제 해결\n-Model Size: 744B (active: 40B)\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      }
+    ]
+  },
+  {
+    "modelId": 96,
+    "modelGuid": "01988e7a-0b6f-7c1a-8ef1-6290654e10c8",
+    "modelServingId": "GaussO-Owl-Ultra-Think-250604-AWQ",
+    "name": [
+      { "languageCode": "en", "content": "GaussO Think" },
+      { "languageCode": "ko", "content": "GaussO Think" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Solves complex and challenging problems\n-Model Size: 671B (active: 37B)\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: X"
+      },
+      {
+        "languageCode": "ko",
+        "content": "복잡하고 난이도 높은 문제 해결\n-Model Size: 671B (active: 37B)\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: X"
+      }
+    ]
+  },
+  {
+    "modelId": 342,
+    "modelGuid": "0198f11d-561b-7a13-8ee8-be27dd7a5e40",
+    "modelServingId": "openai-gpt-oss-120b",
+    "name": [
+      { "languageCode": "en", "content": "GaussO Flash" },
+      { "languageCode": "ko", "content": "GaussO Flash" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Quick reasoning problem solver\n-Base model: GPT-OSS\n-Model Size: 117B (active: 5.1B)\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "추론 문제를 빠르게 해결\n-Base model: GPT-OSS\n-Model Size: 117B (active: 5.1B)\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      }
+    ]
+  },
+  {
+    "modelId": 95,
+    "modelGuid": "01988e78-5fd3-7a3f-9b7a-1b1410747989",
+    "modelServingId": "Gauss-open-671B-instruct-v1.0-AWQ",
+    "name": [
+      { "languageCode": "en", "content": "GaussO" },
+      { "languageCode": "ko", "content": "GaussO" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Excels in handling a wide range of tasks\n-Model Size: 671B (active: 37B)\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: X"
+      },
+      {
+        "languageCode": "ko",
+        "content": "다양한 업무에 탁월한 대응\n-Model Size: 671B (active: 37B)\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: X"
+      }
+    ]
+  },
+  {
+    "modelId": 569,
+    "modelGuid": "019db98e-fec4-7b73-af24-9468aba21f5e",
+    "modelServingId": "samsung-sgm-v3-fp8",
+    "name": [
+      { "languageCode": "en", "content": "Gauss Think" },
+      { "languageCode": "ko", "content": "Gauss Think" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Suitable for data analysis and reasoning\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "데이터 분석 및 추론에 적합\n-Context Length: 128k\n-Structure: MoE\n-Tool calling: O"
+      }
+    ]
+  },
+  {
+    "modelId": 90,
+    "modelGuid": "01988e6e-a7e5-747f-8403-be81549c1d93",
+    "modelServingId": "samsungresearch-sgm-v2-3-37b",
+    "name": [
+      { "languageCode": "en", "content": "Gauss" },
+      { "languageCode": "ko", "content": "Gauss" }
+    ],
+    "description": [
+      {
+        "languageCode": "en",
+        "content": "Enables rapid processing of routine tasks\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: O"
+      },
+      {
+        "languageCode": "ko",
+        "content": "단순 업무 작업을 빠르게 처리\n-Context Length: 64k\n-Structure: MoE\n-Tool calling: O"
+      }
+    ]
+  }
+]
