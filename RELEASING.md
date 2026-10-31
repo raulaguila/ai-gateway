@@ -12,6 +12,8 @@ A versão inclui núcleo, quatro adaptadores, políticas de tokens, exemplos exe
 
 `make release-check` executa formatação, testes com `-race`, exemplos Go testáveis, `go vet` e compilação, e verifica o módulo e a licença. O sucesso desse comando não cria uma release.
 
+O workflow `.github/workflows/ci.yml` valida formatação, testes com `-race`, `go vet` e compilação em Go `1.22.x` e `stable`, com `check-latest: true` e `GOTOOLCHAIN=local`. Rodar em ambas as versões antes de publicar uma nova release; o resultado está nos checks do commit. O pipeline não usa credenciais de provedores e não cria tags ou releases.
+
 Os testes usam HTTP/TLS locais, sem consumo de APIs reais. Samsung/Gauss usam formatos conferidos em parsers e fixtures do Thoth; compatibilidade com deployments reais ainda precisa de validação. A versão mínima declarada é Go 1.22; a execução desta primeira release usa Go 1.27.0. A API pode mudar durante a fase preliminar.
 
 ## Publicar próximas versões

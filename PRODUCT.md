@@ -12,6 +12,8 @@ A API oferece inicialização simples por `NewSingle`, perfis explícitos de cap
 
 ## Stack
 
+CI em GitHub Actions testa Go `1.22.x` e a versão `stable` mais recente em Ubuntu, incluindo detector de concorrência, `go vet`, formatação e compilação de biblioteca/exemplos. Não utiliza APIs reais de provedores.
+
 Go, apenas biblioteca padrão. `go.mod` declara Go 1.22; ambiente disponível de verificação é Go 1.27.0. O módulo é `github.com/raulaguila/ai-gateway`, distribuído sob licença MIT. Sem banco ou infraestrutura obrigatória.
 
 ## Users

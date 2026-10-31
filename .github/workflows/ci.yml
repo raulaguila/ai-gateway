@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Go ${{ matrix.go }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        go: ['1.22.x', 'stable']
+    env:
+      GOTOOLCHAIN: local
+      CGO_ENABLED: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: ${{ matrix.go }}
+          check-latest: true
+          cache: false
+
+      - name: Report Go version
+        run: go version
+
+      - name: Check formatting
+        run: make fmt-check
+
+      - name: Test with race detector
+        run: make test
+
+      - name: Go vet
+        run: make vet
+
+      - name: Build library and examples
+        run: make build

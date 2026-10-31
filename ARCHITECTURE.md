@@ -51,6 +51,8 @@ Não há logs automáticos, persistência de prompts ou backend de métricas. Re
 
 ## Entrega e verificação
 
+GitHub Actions em `.github/workflows/ci.yml` valida a biblioteca e exemplos em matriz `1.22.x`/`stable` em Ubuntu, nos eventos push, pull request e execução manual. Reutiliza `make fmt-check`, `make test` (com `-race`), `make vet` e `make build`. `GOTOOLCHAIN=local` evita upgrade implícito durante o teste da versão mínima. As actions oficiais são fixadas por SHA; o token tem somente `contents: read`, sem persistência de credenciais no checkout. Jobs têm timeout de 10 minutos, execução independente das versões e cancelamento de runs anteriores na mesma referência. O alias estável é resolvido novamente em cada execução, sem cache de dependências.
+
 `make check` verifica formatação, executa testes/exemplos com `-race`, `go vet` e compila com `-buildvcs=false`. Existem exemplos executáveis para os quatro adaptadores, além de exemplos Go testáveis com HTTP local. O README prioriza a primeira chamada e direciona protocolos, tokens, extensões e transporte a páginas em `docs/`. `RELEASING.md`, `CHANGELOG.md` e `make release-check` preparam a distribuição; a verificação exige o caminho público configurado e uma licença, sem publicar ou criar tags.
 
 Módulo `github.com/raulaguila/ai-gateway`, com `go 1.22`, licença MIT e copyright de 2026 de Raul Aguila, conforme escolha do autor. Ambiente de verificação Go 1.27.0. Primeira versão de distribuição: `v0.1.0-alpha.1`, preliminar, com validação por fixtures e HTTP/TLS locais. Testes com `httptest` cobrem HTTP/TLS locais, sem credenciais ou consumo reais. Executar `go test -timeout 30s ./...`, `go test -race -timeout 60s ./...` e `go vet ./...`.

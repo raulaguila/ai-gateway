@@ -1,5 +1,7 @@
 # AI Gateway para Go
 
+[![CI](https://github.com/raulaguila/ai-gateway/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/raulaguila/ai-gateway/actions/workflows/ci.yml)
+
 Biblioteca Go para chamar OpenAI Compatible/Ollama, Anthropic, Samsung Gauss e Samsung Agent Builder com contratos comuns. Sem servidor, banco ou dependências externas.
 
 ## Instalação
@@ -111,3 +113,5 @@ make check
 ```
 
 Executa formatação, testes com detector de concorrência, exemplos compilados e `go vet`. Testes usam HTTP/TLS locais; não consomem APIs reais. Os programas em `examples/` só chamam provedores quando executados explicitamente. A validação em deployments reais continua pendente nesta versão preliminar.
+
+O [GitHub Actions](.github/workflows/ci.yml) executa essas verificações no Go `1.22.x` e no alias `stable` (versão estável mais recente), em pushes, pull requests e acionamento manual. `GOTOOLCHAIN=local` garante que o teste de compatibilidade use a versão selecionada, sem atualização automática do compilador. As actions são fixadas por SHA e o workflow usa permissão de leitura do conteúdo.
